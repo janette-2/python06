@@ -1,0 +1,27 @@
+mi_paquete/
+├── __init__.py
+├── base_datos.py  (contiene la clase 'Conector')
+└── utilidades.py  (contiene la función 'limpiar_texto')
+
+
+
+# 1. Importaciones para simplificar la API (lo más usado)
+from .base_datos import Conector
+from .utilidades import limpiar_texto
+
+# 2. Metadatos del paquete
+__version__ = "1.0.2"
+__author__ = "Tu Nombre"
+
+# 3. Controlar qué se exporta con 'from mi_paquete import *'
+__all__ = ["Conector", "limpiar_texto"]
+
+# 4. Código de inicialización (opcional)
+print("Inicializando el paquete mi_paquete...")
+
+
+¿Por qué se hace esto?
+Sin el __init__.py configurado, el usuario tendría que escribir:
+from mi_paquete.base_datos import Conector
+Con el ejemplo de arriba, el usuario solo escribe:
+from mi_paquete import Conector
