@@ -1,5 +1,5 @@
-def validate_ingredients(ingredients: str):
-    # Local import to avoid circular dependencies explosion
+def validate_ingredients(ingredients: str) -> str:
+    # LOCAL IMPORT to avoid circular dependencies explosion
     from . import light_spellbook
     valid = light_spellbook.light_spell_allowed_ingredients()
     for val in valid:

@@ -3,7 +3,7 @@
 from .dark_spellbook import dark_spell_allowed_ingredients
 
 
-def validate_ingredients(ingredients: str):
+def validate_ingredients(ingredients: str) -> str:
     valid = dark_spell_allowed_ingredients()
     for val in valid:
         # Looks for at least one coincidence (in lower case to match valids)

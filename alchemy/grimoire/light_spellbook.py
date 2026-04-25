@@ -4,6 +4,7 @@ from . import light_validator
 # USE ABSOLUTE IMPORTS [DIRECT IMPORTS] (import aclhemy.grimoire)
 # BECAUSE THEY HAVE: [package -> init -> absolute import]
 
+
 def light_spell_allowed_ingredients() -> list[str]:
     return ["earth", "air", "fire", "water"]
 

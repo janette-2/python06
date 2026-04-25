@@ -1,4 +1,4 @@
-import alchemy.grimoire as grimoire 
+import alchemy.grimoire as grimoire
 
 
 if __name__ == "__main__":
